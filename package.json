@@ -1,18 +1,21 @@
 {
   "name": "my-timer-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple timer application",
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",
-    "vercel-build": "nodemon server.js",
+    "start": "node server.js",
+    "build": "echo 'No build step defined'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.1",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
     "nodemon": "^3.1.7"
   }
 }
