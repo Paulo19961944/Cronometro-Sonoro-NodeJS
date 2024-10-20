@@ -1,0 +1,107 @@
+/* public/styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Fonte padrão para o corpo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2c2c2c; /* Fundo escuro */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    background: #3e3e3e; /* Fundo do container em um tom mais claro */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    padding: 30px; /* Padding padrão */
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Aumentando o padding para dispositivos maiores */
+@media (min-width: 768px) {
+    .container {
+        padding: 40px; /* Padding maior para tablets e acima */
+    }
+}
+
+h1 {
+    font-family: 'Chakra Petch', sans-serif; /* Título em Chakra Petch */
+    color: #f0f0f0; /* Título em cinza claro */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#timer {
+    font-family: 'Chakra Petch', sans-serif; /* Timer em Chakra Petch */
+    font-size: 48px;
+    margin: 20px 0;
+    color: #ffffff; /* Timer em branco */
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+    flex: 1 1 100px; /* Para responsividade */
+    font-family: 'Chakra Petch', sans-serif; /* Fonte para os botões */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra no texto do botão */
+}
+
+/* Cores atualizadas para os botões */
+#start {
+    background-color: #388e3c; /* Verde escuro */
+}
+
+#stop {
+    background-color: #d32f2f; /* Vermelho escuro */
+}
+
+#resume {
+    background-color: #1976d2; /* Azul escuro */
+}
+
+#reset {
+    background-color: #7e7e7e; /* Cinza escuro */
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 600px) {
+    #timer {
+        font-size: 36px;
+    }
+
+    button {
+        flex: 1 1 45%; /* Botões mais largos em telas pequenas */
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    #timer {
+        font-size: 32px;
+    }
+}
